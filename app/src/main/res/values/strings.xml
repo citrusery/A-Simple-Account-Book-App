@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">鲜橙多V1.0.0</string>
+    <string name="user_name">请输入账号</string>
+    <string name="user_passwd">请输入密码</string>
+    <string name="re_user_passwd">请确认密码</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="sign_in">登录</string>
+    <string name="new_user">注册</string>
+    <string name="back">返回</string>
+    <string name="radiobutton1">流水分析</string>
+    <string name="radiobutton2">记一笔</string>
+    <string name="radiobutton3">个性设置</string>
+    <string name="add">添加</string>
+    <string name="asset">请输入金额</string>
+    <string name="wb1">餐饮</string>
+    <string name="wb2">购物</string>
+    <string name="wb3">娱乐</string>
+    <string name="wb4">交通</string>
+    <string name="wb5">收入</string>
+    <string name="wb6">其他</string>
+    <string name="yuan">元</string>
+</resources>

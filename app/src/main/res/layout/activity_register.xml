@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/hb1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CBFFFFFF"
+        android:orientation="horizontal"></LinearLayout>
+
+    <EditText
+
+        android:id="@+id/account_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/user_name"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="15dp"
+        android:autoText="true"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/user_passwd"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/re_user_passwd"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_enroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#84AAC7"
+        android:text="@string/new_user"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:text="已注册？返回登录"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_below="@+id/btn_enroll"/>
+</RelativeLayout>
+

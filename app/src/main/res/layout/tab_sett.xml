@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A4FFFCFC"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Switch
+                        android:id="@+id/settadddisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="    添加显示"
+                        android:textOff="半屏"
+                        android:textOn="全屏" />
+
+                    <Switch
+                        android:id="@+id/settpieview"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="    饼图模式"
+                        android:textOff="环状"
+                        android:textOn="饼状" />
+
+                    <Switch
+                        android:id="@+id/setttheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="    主题设置"
+                        android:textOff="橙子"
+                        android:textOn="橙子" />
+
+                    <Switch
+                        android:id="@+id/setitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="    列表设置"
+                        android:textOff="侧滑"
+                        android:textOn="折叠" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#5e5e5e"
+        android:gravity="center_vertical"
+        android:paddingLeft="15sp"
+        android:text="SETTING"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

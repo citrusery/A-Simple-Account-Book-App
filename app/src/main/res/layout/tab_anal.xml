@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A4FFFCFC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#5e5e5e"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:text="PAYMENT"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mon_pay"
+                    style="@android:style/Widget.DeviceDefault.Light.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:text="100￥"
+                    android:textColor="#532A1D"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#00EEE2E2"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:switchMinWidth="120dp"
+                    android:textOff="MON"
+                    android:textOn="DAY" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.github.mikephil.charting.charts.PieChart
+
+
+                android:id="@+id/pie_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:translationX="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

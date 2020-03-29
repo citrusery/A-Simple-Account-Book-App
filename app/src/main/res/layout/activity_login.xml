@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/hb1">
+
+
+    <LinearLayout
+        android:id="@+id/blurrlogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D7FFFEF8"
+        android:orientation="horizontal"></LinearLayout>
+
+    <EditText
+        android:id="@+id/account_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/user_name"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/user_passwd"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#84AAC7"
+        android:text="@string/sign_in"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_forget_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#0e000000"
+        android:text="@string/forget_pass"
+        android:textColor="#7A201717"
+
+        android:textColorHighlight="#A3FFF5F5"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/folding_cell"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    folding-cell:additionalFlipsCount="1"
+    folding-cell:animationDuration="600"
+    folding-cell:backSideColor="@android:color/holo_blue_dark"
+    folding-cell:cameraHeight="30">
+
+    <include layout="@layout/content"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#75FFFFFF"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView_category1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/imageView_category1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_remark1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:50"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 2000.00"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</com.ramotion.foldingcell.FoldingCell>

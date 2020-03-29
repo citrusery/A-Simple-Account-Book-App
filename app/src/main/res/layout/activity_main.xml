@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main"
+        android:layout_marginBottom="-1dp"
+        android:background="#C0E8F6" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+        <RadioButton
+            android:id="@+id/rb_anal"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/radiobutton1"
+            android:textColor="@drawable/select" />
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/radiobutton2"
+            android:textColor="@drawable/select" />
+
+        <RadioButton
+            android:id="@+id/rb_sett"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawable="@drawable/sett"
+            android:gravity="center"
+            android:text="@string/radiobutton3"
+            android:textColor="@drawable/select" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tabline"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:background="#673AB7"
+            android:translationY="650dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="#80A6C0"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#ffffff"
+                    android:digits="0123456789."
+                    android:gravity="center_horizontal"
+                    android:hint="@string/asset"
+                    android:singleLine="true"
+                    android:textColor="#C9FFFFFF"
+                    android:textColorHint="#6DFFFFFF"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="2.3"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#00ffc8"
+                    android:text="确认"
+                    android:textColor="#009688" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:translationY="20dp">
+
+                <Button
+                    android:id="@+id/butd0"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb1"
+                    android:textColor="#E45485"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/butd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb2"
+                    android:textColor="#E45485"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/butd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb3"
+                    android:textColor="#E45485"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/butd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb4"
+                    android:textColor="#E45485"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/butd4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb5"
+                    android:textColor="#E45485"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/butd5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#FCFFFFFF"
+                    android:text="@string/wb6"
+                    android:textColor="#E45485" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/floatingActionButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bb"
+                android:translationY="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

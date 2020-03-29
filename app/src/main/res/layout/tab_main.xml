@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A4FFFCFC"
+        android:orientation="horizontal"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/day_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#5e5e5e"
+            android:gravity="center_vertical"
+            android:paddingLeft="15sp"
+            android:text="JUNE 22"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF" />
+
+        <ListView
+            android:layout_below="@+id/day_text"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#00FAF0B9"
+            android:text="No record yet."
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
